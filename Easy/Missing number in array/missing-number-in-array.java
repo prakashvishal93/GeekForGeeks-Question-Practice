@@ -30,19 +30,19 @@ class GFG {
 class Solution {
     int missingNumber(int array[], int n) {
         // Your Code Here
-        
-        
-        int sumOfNaturalNumber = (n * (n + 1) / 2);
-        
+        int sumOfNumber = (n * (n + 1) / 2);
         int sumOfArray = 0;
         
         
-        for(int i = 0; i < array.length; i++){
-            sumOfArray = sumOfArray + array[i];
+        for(int i = 0 ; i < array.length; i++ ){
+            sumOfArray += array[i];
+            
         }
-        int result = sumOfNaturalNumber - sumOfArray;
+        int result = sumOfNumber - sumOfArray;
         
-        return result;
-        
+    
+    return result;
     }
+    
+    
 }
